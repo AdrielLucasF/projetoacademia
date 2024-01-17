@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastro - SEJAFIT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='registration.css'> <!-- Adicionando o link para registration.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="registration-container">
+        <div class="registration-box">
+            <h2>Cadastro</h2>
+            <form id="registrationForm" action="process_registration.php" method="post">
+                <!-- Primeira sessão de cadastro -->
+                <div class="registration-section">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="dob">Data de Nascimento:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirmPassword">Repetir Senha:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+
+                <!-- Segunda sessão de cadastro -->
+                <div class="registration-section">
+                    <h3>Nos conte mais sobre você</h3>
+
+                    <label for="goals">Metas:</label>
+                    <textarea id="goals" name="goals" rows="4" cols="50" required></textarea>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src='main.js'></script>
+</body>
+
+</html>
